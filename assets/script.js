@@ -7,4 +7,5 @@ var hour2 = $("#hour-2")
 var hour3 = $("#hour-3")
 var hour4 = $("#hour-4")
 var hour5 = $("#hour-5")
-var currentDay = $("#currentDay");
+var currentDay = dayjs();
+$ ('#currentDay').text(currentDay.format('MMM D, YYYY'));

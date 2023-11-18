@@ -9,7 +9,7 @@ var hour16 = $("#hour-16");
 var hour17 = $("#hour-17");
 
 var currentDay = dayjs();
-$('#currentDay').text(currentDay.format('dddd MMM D, YYYY hh:mm:ss a'));
+$('#currentDay').text(currentDay.format('dddd MMM D, YYYY hh:mm a'));
 
 $(".saveBtn").on("click", function (event) {
   var text = $(this).siblings(".description").val();

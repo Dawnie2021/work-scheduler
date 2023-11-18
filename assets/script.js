@@ -11,25 +11,15 @@ var hour17 = $("#hour-17");
 var currentDay = dayjs();
 $('#currentDay').text(currentDay.format('dddd MMM D, YYYY hh:mm:ss a'));
 
-
-var saveButton = $(".saveBtn");
-
-
-
 $(".saveBtn").on("click", function (event) {
   var text = $(this).siblings(".description").val();
   var time = $(this).parent().attr("id");
 
   // Save text in local storage
   localStorage.setItem(time, text);
+
 });
 
 
 
 
-function scheduleTasks() {
-  var task9 = JSON.parse(localStorage.getItem("hour-9"));
-  hour9.val(task9);
-
-
-}

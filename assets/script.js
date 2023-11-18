@@ -8,18 +8,25 @@ var hour15 = $("#hour-15");
 var hour16 = $("#hour-16");
 var hour17 = $("#hour-17");
 var eachHour = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour17];
+
 var currentDay = dayjs();
-$ ('#currentDay').text(currentDay.format('dddd MMM D, YYYY'));
+$('#currentDay').text(currentDay.format('dddd MMM D, YYYY'));
 var saveButton = $(".saveBtn");
 
-saveButton.on("click", function(event) {
-  event.preventDefault();
+$(".saveBtn").on("click", function (event) {
+  var text = $(this).siblings(".description").val();
+  var time = $(this).parent().attr("id");
+
+  // Save text in local storage
+  localStorage.setItem(time, text);
 });
+
+
 
 
 function scheduleTasks() {
   var task9 = JSON.parse(localStorage.getItem("hour-9"));
- hour9.val(task9);
- 
- 
+  hour9.val(task9);
+
+
 }

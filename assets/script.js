@@ -1,11 +1,13 @@
-var hour9 = $("#hour-9")
-var hour10 = $("#hour-10")
-var hour11 = $("#hour-11")
-var hour12 = $("#hour-12")
-var hour1 = $("#hour-1")
-var hour2 = $("#hour-2")
-var hour3 = $("#hour-3")
-var hour4 = $("#hour-4")
-var hour5 = $("#hour-5")
+var hour9 = $("#hour-9");
+var hour10 = $("#hour-10");
+var hour11 = $("#hour-11");
+var hour12 = $("#hour-12");
+var hour13 = $("#hour-13");
+var hour14 = $("#hour-14");
+var hour15 = $("#hour-15");
+var hour16 = $("#hour-16");
+var hour17 = $("#hour-17");
 var currentDay = dayjs();
 $ ('#currentDay').text(currentDay.format('MMM D, YYYY'));
+
+

@@ -8,6 +8,5 @@ var hour15 = $("#hour-15");
 var hour16 = $("#hour-16");
 var hour17 = $("#hour-17");
 var currentDay = dayjs();
-$ ('#currentDay').text(currentDay.format('MMM D, YYYY'));
-
+$ ('#currentDay').text(currentDay.format('dddd MMM D, YYYY'));
 

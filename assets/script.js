@@ -7,11 +7,14 @@ var hour14 = $("#hour-14");
 var hour15 = $("#hour-15");
 var hour16 = $("#hour-16");
 var hour17 = $("#hour-17");
-var eachHour = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour17];
 
 var currentDay = dayjs();
-$('#currentDay').text(currentDay.format('dddd MMM D, YYYY'));
+$('#currentDay').text(currentDay.format('dddd MMM D, YYYY hh:mm:ss a'));
+
+
 var saveButton = $(".saveBtn");
+
+
 
 $(".saveBtn").on("click", function (event) {
   var text = $(this).siblings(".description").val();

@@ -1,16 +1,3 @@
-// added variables for hours
-// var hour9 = $("#hour-9");
-// var hour10 = $("#hour-10");
-// var hour11 = $("#hour-11");
-// var hour12 = $("#hour-12");
-// var hour13 = $("#hour-13");
-// var hour14 = $("#hour-14");
-// var hour15 = $("#hour-15");
-// var hour16 = $("#hour-16");
-// var hour17 = $("#hour-17");
-// set day of the week, date, and time
-
-
 $(document).ready(function () {
   var currentDay = dayjs();
   $('#currentDay').text(currentDay.format('dddd MMM D, YYYY hh:mm a'));
@@ -24,8 +11,9 @@ $(document).ready(function () {
     // Save text in local storage
     localStorage.setItem(time, text);
   })
-console.log(currentHour)
-
+  console.log(currentHour)
+  // made the colors for past, present, and future
+  // did local storage so it stayed on the page when refreshed
   $(".time-block").each(function () {
     var keyList = $(this).attr("id");
     $(this).children(".description")
